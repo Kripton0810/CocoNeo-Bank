@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "29627468175",
+    "firebase_url": "https://coco-neobank-f90ee-default-rtdb.firebaseio.com",
+    "project_id": "coco-neobank-f90ee",
+    "storage_bucket": "coco-neobank-f90ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29627468175:android:68c8f2b8098dfcafc063fa",
+        "android_client_info": {
+          "package_name": "com.bookbin.coconeobank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29627468175-qv0ll9btsks84r69km9jmu6tesnctqi3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bookbin.coconeobank",
+            "certificate_hash": "03385341eed46f84dfc338f7c732944868777266"
+          }
+        },
+        {
+          "client_id": "29627468175-isdn14tlic7qnh7bsln9ub6h4uu652ia.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNbfmTMXj_8tgj7oEVAloENgYqgWMecvY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "29627468175-isdn14tlic7qnh7bsln9ub6h4uu652ia.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

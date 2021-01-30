@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home_loan_fragement">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="104dp">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="Neo Home Sweet Home"
+                    android:textColor="#000"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Home Loan Amount"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/p"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="16dp"
+
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/spinner_back"
+                    android:ems="10"
+                    android:hint="Loan amount"
+                    android:inputType="numberDecimal"
+
+                    android:padding="3dp" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="Interest Rate"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/r"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="16dp"
+
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/spinner_back"
+                    android:ems="10"
+                    android:hint="Rate %"
+                    android:inputType="numberDecimal"
+
+                    android:padding="3dp" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="Loan Tenure in (Years)"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/t"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="16dp"
+
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/spinner_back"
+                    android:ems="10"
+                    android:hint="Tenure in Years"
+                    android:inputType="numberDecimal"
+
+                    android:padding="3dp" />
+
+                <Button
+                    android:id="@+id/home_loan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:elevation="3dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/button_back"
+                    android:textColor="#000"
+                    android:text="home loan" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="94dp"
+                    android:layout_marginBottom="32dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="16dp"
+                        android:gravity="center"
+                        android:text="You Monthly EMI ₹"
+                        android:textSize="24sp"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/home_loan_result"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="16dp"
+                        android:gravity="center"
+                        android:text="__________"
+                        android:textColor="#000"
+                        android:textSize="24sp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

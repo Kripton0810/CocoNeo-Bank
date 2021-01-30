@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".retire_fragement">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="409dp"
+            android:layout_height="729dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RETIREMENT PLANNER"
+                    android:textSize="32sp"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Current Age"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/cage"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:padding="3dp"
+                    android:hint="Current age in years"
+                    android:inputType="numberSigned"
+                    android:background="@drawable/spinner_back"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Retirement Age"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/rage"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:padding="3dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Retirement age in years"
+                    android:inputType="numberSigned"
+                    android:background="@drawable/spinner_back"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Life Expectancy"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/eage"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:padding="3dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Life Expectancy in years"
+                    android:inputType="numberSigned"
+                    android:background="@drawable/spinner_back"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Monthly Expense"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/monthlyexp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:padding="3dp"
+                    android:hint="Monthly Expense"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/spinner_back"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Expected return on investment"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/roi"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:layout_marginLeft="32dp"
+                    android:padding="3dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="Expected return on investment(%)"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/spinner_back"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Inflation rate"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/inflation_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:ems="10"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:padding="3dp"
+                    android:hint="Inflation rate(%)"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/spinner_back"
+                    />
+
+                <Button
+                    android:id="@+id/submit_for_ret"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center"
+
+                    android:text="submit"
+                    android:background="@drawable/button_back"/>
+
+                <TextView
+                    android:id="@+id/retire_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:gravity="center"
+                    android:text="Result"
+                    android:textColor="#000"
+                    android:textSize="32sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="32dp">
+
+                    <LinearLayout
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No of years to retirement"
+                            android:textColor="#000"
+                            android:layout_marginLeft="8dp"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/yeargap"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="___"
+                            android:textColor="#000"
+                            android:layout_marginLeft="8dp"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="years"
+                            android:textColor="#000"
+                            android:layout_marginLeft="8dp"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No of years after retirement"
+                            android:textColor="#000"
+                            android:layout_marginLeft="8dp"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/yeargapafter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="___"
+                            android:textColor="#000"
+                            android:layout_marginLeft="8dp"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="years"
+                            android:textColor="#000"
+                            android:layout_marginLeft="8dp"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Inflation adjusted return"
+                            android:textColor="#000"
+                            android:layout_marginLeft="8dp"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/inflation_adjust"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="___"
+                            android:textColor="#000"
+                            android:layout_marginLeft="8dp"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="%"
+                            android:textColor="#000"
+                            android:layout_marginLeft="8dp"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Current annual expense (Rs)"
+                            android:textColor="#000"
+                            android:layout_marginLeft="8dp"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/anualexp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="___"
+                            android:textColor="#000"
+                            android:layout_marginLeft="8dp"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="100dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Expense at Retirement (Rs)"
+                            android:textColor="#000"
+                            android:layout_marginLeft="8dp"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/future_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="___"
+                            android:textColor="#000"
+                            android:layout_marginLeft="8dp"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
